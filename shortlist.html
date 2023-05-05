@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Job Portal</title>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <!-- favcion -->
+        <link rel="shortcut icon" href="assets/image/icon/icon.png" type="image/icon">
+        <!-- main css link -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body>
+        <!-- admin -->
+        <main class="root" id="root">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- sidebar content -->
+                <div class="sidebar_content">
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <!-- nav list -->
+                        <ul class="sidebar_navList">
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./userpanel.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/dahs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./profile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/profile.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./resume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/view.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">View Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./savejobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/save.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Save Job</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./shortlist.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/shortlist.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Short List</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./applyjobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Apply Jobs</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./emailresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/email.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Emailed Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="#" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/Logout.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- admin main -->
+            <section class="admin_main">
+                <!-- admin header -->
+                <div class="admin_header">
+                    <div class="admin_header_wrapper">
+                         <!-- header left -->
+                        <div class="admin_header_left">
+                            <!-- header logo -->
+                            <div class="admin_logo">
+                                <a <a href="/userpanel.html" class="admin_logo_image" title="Click To Home">
+                                    <img src="assets/image/logo.png" alt="image">
+                                </a>
+                            </div>
+                            <!-- admin toggle -->
+                            <div class="admin_collopse" id="adminCollapse">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header right -->
+                        <div class="admin_header_right">
+                            <!-- notification btn -->
+                            <div class="user_notification" id="notification">
+                                <!-- notification box -->
+                                <div class="notificationbox" id="notification_box">
+                                    <!-- notification_list -->
+                                    <ul class="notification_list">
+                                        <li>
+                                            <a href="">
+                                                <span>15</span>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>25</span>
+                                                <span>Notification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- user profile -->
+                            <div class="admin_profile">
+                                <!-- admin profile image -->
+                                <div class="admin_profile_image">
+                                    <img src="assets/image/clint/clint2.jpg" alt="image">
+                                </div>
+
+                                <!-- admin info -->
+                                <div class="admin_info">
+                                    <p class="admin_name">Jake Malan</p>
+                                    <p class="admin_rule_name">Jake Malan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin content -->
+                <div class="admnin_content">
+                    <!-- breadcrumbs -->
+                    <div class="admin_breadcrumb">
+                        <!-- page title -->
+                        <h2 class="admin_pagetitle">Short List</h2>
+                        <!-- bread cambs -->
+                        <div class="breadcrumbs">
+                            <!-- list -->
+                            <ul class="breadcrumbs_list">
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <a class="breadcrumbs_link bread_home" href="">Home</a>
+                                </li>
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <span class="breadcrumbs_link bread_icon">Shortlist</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- admin container -->
+                    <div class="admin_container">
+                        <!-- table -->
+                        <div class="table_header">
+                            <!-- title -->
+                            <p class="admin_table_title">Short List</p>
+                            <!-- table paginate -->
+                            <div class="select_paginate">
+                                <select class="input_control">
+                                    <option selected hidden>Select</option>
+                                    <option>5</option>
+                                    <option>10</option>
+                                    <option>15</option>
+                                    <option>20</option>
+                                    <option>25</option>
+                                    <option>30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- admin table -->
+                        <div class="admin_table">
+                            <!-- table -->
+                            <table>
+                                <!-- table header -->
+                                <thead>
+                                    <tr>
+                                        <th>title</th>
+                                        <th>designation</th>
+                                        <th>Last Date</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <!-- table body -->
+                                <tbody>
+                                    <!-- table body row -->
+                                    <tr>
+                                        <td>
+                                            <!-- save jobs -->
+                                            <div class="save_jobs">
+                                                <div class="tranding_news_wrapper">
+                                                    <!-- imgae -->
+                                                    <div class="similarjob_image">
+                                                        <img src="assets/image/icon/google.png" alt="">
+                                                    </div>
+                                                    <!-- details -->
+                                                    <div class="tranding_news_details">
+                                                        <!-- date -->
+                                                        <div class="trending_newsdate">
+                                                            <p> <span>Last date:</span> 26 March</p>
+                                                        </div>
+                                                        <!-- title -->
+                                                        <a href="./jobdetails.html">
+                                                            <h3 class="tranding_news_title">Frontend Developer</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Frontend developer</td>
+                                        <td>02-12-2020</td>
+                                        <td>
+                                            <!-- table action -->
+                                            <div class="table_action">
+                                                <!-- table action btn -->
+                                                <button class="action_table_btn main_btn">
+                                                    <!-- delete image -->
+                                                    <img src="assets/image/admin/delete.png" alt="">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- table body row -->
+                                    <tr>
+                                        <td>
+                                            <!-- save jobs -->
+                                            <div class="save_jobs">
+                                                <div class="tranding_news_wrapper">
+                                                    <!-- imgae -->
+                                                    <div class="similarjob_image">
+                                                        <img src="assets/image/icon/instagram.png" alt="">
+                                                    </div>
+                                                    <!-- details -->
+                                                    <div class="tranding_news_details">
+                                                        <!-- date -->
+                                                        <div class="trending_newsdate">
+                                                            <p> <span>Last date:</span> 26 March</p>
+                                                        </div>
+                                                        <!-- title -->
+                                                        <a href="#">
+                                                            <h3 class="tranding_news_title">Frontend Developer</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Frontend developer</td>
+                                        <td>02-12-2020</td>
+                                        <td>
+                                            <!-- table action -->
+                                            <div class="table_action">
+                                                <!-- table action btn -->
+                                                <button class="action_table_btn main_btn">
+                                                    <!-- delete image -->
+                                                    <img src="assets/image/admin/delete.png" alt="">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- table body row -->
+                                    <tr>
+                                        <td>
+                                            <!-- save jobs -->
+                                            <div class="save_jobs">
+                                                <div class="tranding_news_wrapper">
+                                                    <!-- imgae -->
+                                                    <div class="similarjob_image">
+                                                        <img src="assets/image/icon/facebook.png" alt="">
+                                                    </div>
+                                                    <!-- details -->
+                                                    <div class="tranding_news_details">
+                                                        <!-- date -->
+                                                        <div class="trending_newsdate">
+                                                            <p> <span>Last date:</span> 26 March</p>
+                                                        </div>
+                                                        <!-- title -->
+                                                        <a href="#">
+                                                            <h3 class="tranding_news_title">Frontend Developer</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Frontend developer</td>
+                                        <td>02-12-2020</td>
+                                        <td>
+                                            <!-- table action -->
+                                            <div class="table_action">
+                                                <!-- table action btn -->
+                                                <button class="action_table_btn main_btn">
+                                                    <!-- delete image -->
+                                                    <img src="assets/image/admin/delete.png" alt="">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- table body row -->
+                                    <tr>
+                                        <td>
+                                            <!-- save jobs -->
+                                            <div class="save_jobs">
+                                                <div class="tranding_news_wrapper">
+                                                    <!-- imgae -->
+                                                    <div class="similarjob_image">
+                                                        <img src="assets/image/icon/tesla.png" alt="">
+                                                    </div>
+                                                    <!-- details -->
+                                                    <div class="tranding_news_details">
+                                                        <!-- date -->
+                                                        <div class="trending_newsdate">
+                                                            <p> <span>Last date:</span> 26 March</p>
+                                                        </div>
+                                                        <!-- title -->
+                                                        <a href="#">
+                                                            <h3 class="tranding_news_title">Frontend Developer</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Frontend developer</td>
+                                        <td>02-12-2020</td>
+                                        <td>
+                                            <!-- table action -->
+                                            <div class="table_action">
+                                                <!-- table action btn -->
+                                                <button class="action_table_btn main_btn">
+                                                    <!-- delete image -->
+                                                    <img src="assets/image/admin/delete.png" alt="">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- table body row -->
+                                    <tr>
+                                        <td>
+                                            <!-- save jobs -->
+                                            <div class="save_jobs">
+                                                <div class="tranding_news_wrapper">
+                                                    <!-- imgae -->
+                                                    <div class="similarjob_image">
+                                                        <img src="assets/image/icon/twiter.png" alt="">
+                                                    </div>
+                                                    <!-- details -->
+                                                    <div class="tranding_news_details">
+                                                        <!-- date -->
+                                                        <div class="trending_newsdate">
+                                                            <p> <span>Last date:</span> 26 March</p>
+                                                        </div>
+                                                        <!-- title -->
+                                                        <a href="#">
+                                                            <h3 class="tranding_news_title">Frontend Developer</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Frontend developer</td>
+                                        <td>02-12-2020</td>
+                                        <td>
+                                            <!-- table action -->
+                                            <div class="table_action">
+                                                <!-- table action btn -->
+                                                <button class="action_table_btn main_btn">
+                                                    <!-- delete image -->
+                                                    <img src="assets/image/admin/delete.png" alt="">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- table paginate button -->
+                        <div class="paginate">
+                            <!-- list -->
+                            <ul class="paginate_list">
+                                <li class="prev_peginate">
+                                    <a href=""></a>
+                                </li>
+                                <li class="num_paginate">
+                                    <a href="">1</a>
+                                </li>
+                                <li class="num_paginate">
+                                    <a href="">2</a>
+                                </li>
+                                <li class="num_paginate">
+                                    <a href="">3</a>
+                                </li>
+                                <li class="num_paginate">
+                                    <a href="">4</a>
+                                </li>
+                                <li class="num_paginate">
+                                    <a href="">5</a>
+                                </li>
+                                <li class="num_paginate">
+                                    <a href="">6</a>
+                                </li>
+                                <li class="num_paginate">
+                                    <a href="">7</a>
+                                </li>
+                                <li class="next_peginate">
+                                    <a href=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Job Portal</title>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <!-- favcion -->
+        <link rel="shortcut icon" href="assets/image/icon/icon.png" type="image/icon">
+        <!-- main css link -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body>
+        <!-- admin -->
+        <main class="root" id="root">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- sidebar content -->
+                <div class="sidebar_content">
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <!-- nav list -->
+                        <ul class="sidebar_navList">
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./userpanel.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/dahs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./profile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/profile.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./resume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/view.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">View Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./savejobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/save.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Save Job</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./shortlist.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/shortlist.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Short List</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./applyjobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Apply Jobs</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./emailresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/email.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Emailed Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="#" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/Logout.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- admin main -->
+            <section class="admin_main">
+                <!-- admin header -->
+                <div class="admin_header">
+                    <div class="admin_header_wrapper">
+                         <!-- header left -->
+                        <div class="admin_header_left">
+                            <!-- header logo -->
+                            <div class="admin_logo">
+                                <a <a href="/userpanel.html" class="admin_logo_image" title="Click To Home">
+                                    <img src="assets/image/logo.png" alt="image">
+                                </a>
+                            </div>
+                            <!-- admin toggle -->
+                            <div class="admin_collopse" id="adminCollapse">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header right -->
+                        <div class="admin_header_right">
+                            <!-- notification btn -->
+                            <div class="user_notification" id="notification">
+                                <!-- notification box -->
+                                <div class="notificationbox" id="notification_box">
+                                    <!-- notification_list -->
+                                    <ul class="notification_list">
+                                        <li>
+                                            <a href="">
+                                                <span>15</span>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>25</span>
+                                                <span>Notification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- user profile -->
+                            <div class="admin_profile">
+                                <!-- admin profile image -->
+                                <div class="admin_profile_image">
+                                    <img src="assets/image/clint/clint2.jpg" alt="image">
+                                </div>
+
+                                <!-- admin info -->
+                                <div class="admin_info">
+                                    <p class="admin_name">Jake Malan</p>
+                                    <p class="admin_rule_name">Jake Malan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin content -->
+                <div class="admnin_content">
+                    <!-- breadcrumbs -->
+                    <div class="admin_breadcrumb">
+                        <!-- page title -->
+                        <h2 class="admin_pagetitle">Edit Resume</h2>
+                        <!-- bread cambs -->
+                        <div class="breadcrumbs">
+                            <!-- list -->
+                            <ul class="breadcrumbs_list">
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <a class="breadcrumbs_link bread_home" href="">Home</a>
+                                </li>
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <span class="breadcrumbs_link bread_icon">Edit-Resume</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- edit profile -->
+                    <div class="edit_profile">
+                        <!-- edit block -->
+                        <div class="edit_block">
+                            <!-- edit form -->
+                            <form action="#" class="edit_form">
+                                <!-- block title -->
+                                <p class="obout_user_title">Personal Details :</p>
+                                <!-- edit form wrapper -->
+                                <div class="edit_form_wrapper">
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Name</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Address</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="number" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Phone</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Designation</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Fathers Name</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Mothers Name</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="date" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Date Of Birth</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Gender</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Marital Status</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Nationality</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="number" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">National Id No</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Religion</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Permanent Address</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Current Location</label>
+                                    </div>
+                                </div>
+                                <!-- add expreince -->
+                                <p class="obout_user_title">Add Exprience</p>
+                                <!-- expreience -->
+                                <div class="edit_form_wrapper">
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Company Name</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Designation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="date" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Start Date</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="date" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">End Date</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Company Name</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Designation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="date" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Start Date</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="date" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">End Date</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- social add button -->
+                                    <div class="sscial_add_btn">
+                                        <button class="global_btn main_btn btnHover" type="button">Add Exprience</button>
+                                    </div>
+                                </div>
+                                <!-- block title -->
+                                <p class="obout_user_title">Application Information: </p>
+                                <!-- edit form wrapper -->
+                                <div class="edit_form_wrapper">
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Available For</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Present Salary</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Expected Salary</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Job Category</label>
+                                    </div>
+                                    <!-- single input -->
+                                    <div class="form_input_inner">
+                                        <input type="text" class="input_control contact_input" required="">
+                                        <label class="contact_input_tile">Preferred Country</label>
+                                    </div>
+                                </div>
+                                <!-- add expreince -->
+                                <p class="obout_user_title">Academic Qualification:</p>
+                                <!-- expreience -->
+                                <div class="edit_form_wrapper">
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Exam Title</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Subject</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Institute</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="date" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Pas.Year</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Exam Title</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Subject</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Institute</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="date" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Pas.Year</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- social add button -->
+                                    <div class="sscial_add_btn">
+                                        <button class="global_btn main_btn btnHover" type="button">Add Exprience</button>
+                                    </div>
+                                </div>
+                                <!-- add skill -->
+                                <p class="obout_user_title">Add Skill</p>
+                                <!-- skill wrapper -->
+                                <div class="edit_form_wrapper">
+                                    <!-- skill inner -->
+                                    <div class="skill_inner">
+                                        <!-- single input -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Skill Name</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- skill inner -->
+                                    <div class="skill_inner">
+                                        <!-- single input -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Skill Name</label>
+                                        </div>
+                                         <!-- delete btn -->
+                                         <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- social add button -->
+                                    <div class="sscial_add_btn">
+                                        <button class="global_btn main_btn btnHover" type="button">Add Skill</button>
+                                    </div>
+                                </div>
+                                <!-- Reference -->
+                                <p class="obout_user_title">Add Reference</p>
+                                <!-- wrapper -->
+                                <div class="edit_form_wrapper">
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Name</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Organization</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Designation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Relation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- expreience item -->
+                                    <div class="add_expreince">
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Name</label>
+                                        </div>
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Organization</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Designation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="text" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Relation</label>
+                                        </div>
+                                        <!-- add designation -->
+                                        <div class="form_input_inner">
+                                            <input type="number" class="input_control contact_input" required="">
+                                            <label class="contact_input_tile">Duration</label>
+                                        </div>
+                                        <!-- delete btn -->
+                                        <button type="button" class="main_btn delete_btn">
+                                            <img src="assets/image/admin/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- social add button -->
+                                    <div class="sscial_add_btn">
+                                        <button class="global_btn main_btn btnHover" type="button">Add Exprience</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+    </body>
+</html>

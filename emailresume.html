@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Job Portal</title>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <!-- favcion -->
+        <link rel="shortcut icon" href="assets/image/icon/icon.png" type="image/icon">
+        <!-- main css link -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body>
+        <!-- admin -->
+        <main class="root" id="root">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- sidebar content -->
+                <div class="sidebar_content">
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <!-- nav list -->
+                        <ul class="sidebar_navList">
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./userpanel.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/dahs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./profile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/profile.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editprofile.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Profile</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./resume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/view.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">View Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./editresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/note.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Edit Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./savejobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/save.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Save Job</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./shortlist.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/shortlist.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Short List</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./applyjobs.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/applyjobs.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Apply Jobs</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="./emailresume.html" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/email.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Emailed Resume</span>
+                                </a>
+                            </li>
+                            <!-- sidebar navlist item -->
+                            <li class="sidebarNav_item">
+                                <!-- nav link -->
+                                <a href="#" class="sidebarNav_link">
+                                    <!-- icon -->
+                                    <span class="sidebarNav_image">
+                                        <img src="assets/image/admin/Logout.png" alt="">
+                                    </span>
+                                    <!-- text -->
+                                    <span class="sidebarNav_text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- admin main -->
+            <section class="admin_main">
+                <!-- admin header -->
+                <div class="admin_header">
+                    <div class="admin_header_wrapper">
+                         <!-- header left -->
+                        <div class="admin_header_left">
+                            <!-- header logo -->
+                            <div class="admin_logo">
+                                <a href="/userpanel.html" class="admin_logo_image" title="Click To Home">
+                                    <img src="assets/image/logo.png" alt="image">
+                                </a>
+                            </div>
+                            <!-- admin toggle -->
+                            <div class="admin_collopse" id="adminCollapse">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- header right -->
+                        <div class="admin_header_right">
+                            <!-- notification btn -->
+                            <div class="user_notification" id="notification">
+                                <!-- notification box -->
+                                <div class="notificationbox" id="notification_box">
+                                    <!-- notification_list -->
+                                    <ul class="notification_list">
+                                        <li>
+                                            <a href="">
+                                                <span>15</span>
+                                                <span>Message</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>25</span>
+                                                <span>Notification</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- user profile -->
+                            <div class="admin_profile">
+                                <!-- admin profile image -->
+                                <div class="admin_profile_image">
+                                    <img src="assets/image/clint/clint2.jpg" alt="image">
+                                </div>
+
+                                <!-- admin info -->
+                                <div class="admin_info">
+                                    <p class="admin_name">Jake Malan</p>
+                                    <p class="admin_rule_name">Jake Malan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin content -->
+                <div class="admnin_content">
+                    <!-- breadcrumbs -->
+                    <div class="admin_breadcrumb">
+                        <!-- page title -->
+                        <h2 class="admin_pagetitle">Email Resume</h2>
+                        <!-- bread cambs -->
+                        <div class="breadcrumbs">
+                            <!-- list -->
+                            <ul class="breadcrumbs_list">
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <a class="breadcrumbs_link bread_home" href="">Home</a>
+                                </li>
+                                <!-- item -->
+                                <li class="breadcrumbs_item">
+                                    <span class="breadcrumbs_link bread_icon">Email-Resume</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- admin container -->
+                    <div class="admin_container">
+                        <p class="obout_user_title">Email Resume to a Company:</p>
+                        <!-- mail resume form -->
+                        <form action="">
+                            <div class="contactform_wrapper">
+                                <!-- input inner -->
+                                <div class="contact_input_inner">
+                                    <input type="text" class="input_control contact_input" required="">
+                                    <label class="contact_input_tile">Name</label>
+                                </div>
+                                <!-- input inner -->
+                                <div class="contact_input_inner">
+                                    <input type="email" class="input_control contact_input" required="">
+                                    <label class="contact_input_tile">My Email</label>
+                                </div>
+                                <!-- input inner -->
+                                <div class="contact_input_inner">
+                                    <input type="email" class="input_control contact_input" required="">
+                                    <label class="contact_input_tile">Company Email</label>
+                                </div>
+                                <!-- input inner -->
+                                <div class="contact_input_inner">
+                                    <input type="text" class="input_control contact_input" required="">
+                                    <label class="contact_input_tile">Subject</label>
+                                </div>
+                                <!-- input inner -->
+                                <div class="contact_input_inner">
+                                    <textarea class="input_control contact_input contact_textarea" required=""></textarea>
+                                    <label class="contact_input_tile">Message</label>
+                                </div>
+                            </div>
+                            <!-- resume type -->
+                            <div class="resume_type">
+                                <!-- title -->
+                                <p class="obout_user_title">Resume Type:</p>
+                                <!-- wrapper -->
+                                <div class="resume_type_wrapper">
+                                    <!-- type item -->
+                                    <div class="resume_type_item">
+                                        <!-- check inner -->
+                                        <label class="check_inner">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <!-- resume_type_title  -->
+                                        <div class="resume_type_title">Jobportal Resume</div>
+                                    </div>
+                                    <!-- type item -->
+                                    <div class="resume_type_item">
+                                        <!-- check inner -->
+                                        <label class="check_inner">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <!-- resume_type_title  -->
+                                        <div class="resume_type_title">Upload Resume</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- submit btn -->
+                            <div class="contact_submit">
+                                <button type="submit" class="main_btn global_btn btnHover">Send Email</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+    </body>
+</html>
